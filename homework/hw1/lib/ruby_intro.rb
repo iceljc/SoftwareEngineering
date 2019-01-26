@@ -1,7 +1,7 @@
 # When done, submit this entire file to the autograder.
 
 # Part 1
-
+# sum all elements in an array
 def sum arr
   	if arr.empty?
 		return 0
@@ -14,6 +14,7 @@ def sum arr
 	return sum
 end
 
+# sum the two max number in an array
 def max_2_sum arr
   	if arr.empty?
 		return 0
@@ -34,6 +35,7 @@ def max_2_sum arr
 	return max1 + max2
 end
 
+# check whether two elements in an array are equal to n
 def sum_to_n? arr, n
   	if arr.empty? or arr.size==1
 		return false
@@ -51,7 +53,7 @@ end
 
 
 # Part 2
-
+# print Hello + name
 def hello(name)
   	if name
 		return "Hello, #{name}"
@@ -60,6 +62,7 @@ def hello(name)
 	end
 end
 
+# check whether string s starts with consonant
 def starts_with_consonant? s
   	if s.empty?
 		return false
@@ -68,6 +71,7 @@ def starts_with_consonant? s
 	return (s[0]=~/[bcdfghjklmnprstvwxyz]/)
 end
 
+# check whether string s is binary and multiple of 4. 
 def binary_multiple_of_4? s
 	if s.empty? 
 		return false
@@ -83,6 +87,7 @@ end
 
 # Part 3
 
+# define a class
 class BookInStock
 	# attr_accessor :isbn
 	# attr_accessor :price
@@ -94,20 +99,21 @@ class BookInStock
 		@isbn = isbn
 		@price = price
 	end
-
+	#getter
 	def isbn
 		@isbn
 	end
 	def price
 		@price
 	end
+	# setter
 	def isbn=(value)
 		@isbn = value
 	end
 	def price=(value)
 		@price = value
 	end
-
+	 # print book price
 	def price_as_string
 		out = "$%0.2f" % [@price]
 	end
