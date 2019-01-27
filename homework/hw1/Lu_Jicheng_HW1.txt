@@ -1,4 +1,4 @@
-Github location: https://github.com/iceljc/SoftwareEngineering/tree/master/homework/hw1
+Github location: https://github.com/iceljc/SoftwareEngineering
 
 Test Results:
 
